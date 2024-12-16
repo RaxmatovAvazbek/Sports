@@ -3,7 +3,7 @@ import { useFetch } from "../hooks/useFetch";
 // import { Loader } from "../components";
 
 const Sportchilar = () => {
-  const {data: sport, loading, error } = useFetch(`http://localhost:1000/uzbekSport`);
+  const {data: sport, loading, error } = useFetch(`https://676076cc6be7889dc35e0637.mockapi.io/sport/uzbekSport`);
 
   return (
     <div className="container my-10 px-4">
