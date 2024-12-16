@@ -1,9 +1,13 @@
-import { Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 // import { Loader } from "../components";
 
 const Sportchilar = () => {
-  const {data: sport, loading, error } = useFetch(`https://676076cc6be7889dc35e0637.mockapi.io/sport/uzbekSport`);
+  const {
+    data: sport,
+    loading,
+    error,
+  } = useFetch(`https://676076cc6be7889dc35e0637.mockapi.io/sport/uzbekSport`);
 
   return (
     <div className="container my-10 px-4">
@@ -23,7 +27,7 @@ const Sportchilar = () => {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="h-60 w-full object-cover sm: object-cover"
+                      className="h-60 w-full sm: object-cover"
                     />
                   </figure>
                   <div className="card-body">
@@ -33,10 +37,18 @@ const Sportchilar = () => {
                     <p className="text-gray-500">
                       {item.sport} - {item.title}
                     </p>
-                    <p className="text-sm mt-2">{item.body ? item.body.slice(0, 35) : "No description available"} ...</p>
+                    <p className="text-sm mt-2">
+                      {item.body
+                        ? item.body.slice(0, 35)
+                        : "No description available"}{" "}
+                      ...
+                    </p>
                     <div className="card-actions justify-start mt-4">
-                      <Link to={`/sport/${item.id}`} className="py-1 px-6 bg-blue-600 text-white rounded btn-info">
-                          Batafsil
+                      <Link
+                        to={`/url/${item.id}`}
+                        className="py-1 px-6 bg-blue-600 text-white rounded btn-info"
+                      >
+                        Batafsil
                       </Link>
                     </div>
                   </div>

@@ -17,7 +17,7 @@ function App() {
           element: <Sportchilar />,
         },
         {
-          path: "/sport/:id",
+          path: "/url/:id",
           element: <Cards />,
         },
         {
