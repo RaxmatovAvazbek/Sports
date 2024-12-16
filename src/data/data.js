@@ -9,6 +9,24 @@ export  const uzbekSport = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTbCN9L8s1XRGzAUzSmPaPGwTGSDSiP3eMQ&s",
   },
   {
+    id: 11,
+    name: "Lina Cheryazova",
+    sport: "YengilAtletika",
+    title: "Akrobatikada fristayl bo‘yicha ham birinchi olimpiya chempioni hisoblanadi.",
+    body: "1994 yil Olimpiada o‘yinlaridan so‘ng u og‘ir tan jarohati olgan. Amerikaning Leyk-Plesid qishlog‘ida mashg‘ulot vaqtida 25 yoshida sportchi boshidan hayotiga xavf soluvchi jarohat oldi, biroq u nafaqat sog‘aydi, balki katta sportga ham qayta oldi. 1998 yilda Naganoda qishki Olimpiya o‘yinlariga saralash bo‘lib o‘tdi. Musobaqada 13-o‘rinni qo‘lga kiritgan Lina katta sportdagi faoliyatiga yakun yasagan. O‘zbekiston tarixidagi birinchi chang‘i akrobatikachisi Lina Cheryazova 2019 yil 23 mart kuni Novosibirksda 51 yoshda hayotdan ko‘z yumgan.",
+    image:
+      "	https://www.gazeta.uz/media/img/2021/07/Um1gNs16270163096149_b.jpg",
+  },
+  {
+    id: 12,
+    name: "Oksana Chusovitina",
+    sport: " Osiyo o‘yinlari chempioni",
+    title: "Bugungi kunda Tokioda bo‘lib o‘tayotgan Olimpiada o‘yinlarida ham ishtirok etmoqda. Bu uning sakkizinchi Olimpiadasi.",
+    body: "Oksana Chusovitina yetti bor (1992, 1996, 2000, 2004, 2008, 2012, 2016) yozgi Olimpiadada ishtirok etgan holda Ginnesning rekordlar kitobiga kiritilgan. Sportchi SSSR, Germaniya (2006−2012) nomidan Olimpiada o‘yinlarida ishtirok etgan, ayni vaqtda esa O‘zbekiston sharafini himoya qilmoqda. Chusovitina — 1992 yili jamoaviy bahsda olimpiya chempioni, uch karra jahon chempioni, Yevropa chempioni, Osiyo o‘yinlari chempioni bo‘lgan. U tayanib sakrashga ixtisoslashgan.",
+    image:
+      "	https://www.gazeta.uz/media/img/2021/07/LkpIo916270411056585_b.jpg",
+  },
+  {
     id: 2,
     name: "Oksana Chusovitina",
     sport: "Gimnastika",
