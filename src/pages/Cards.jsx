@@ -4,18 +4,19 @@ import { useParams, useNavigate } from "react-router-dom";
 const Cards = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const url = `http://localhost:5000/uzbekSport/${id}`;
+  const url = `http://localhost:1000/uzbekSport/${id}`;
   const { data: sport, loading, error } = useFetch(url);
-
+  console.log(sport);
+  
   return (
     <div className="container images mx-auto mt-10">
-      <button onClick={() => navigate(-1)} className="btn btn-primary mb-6">
+      <button onClick={() => navigate(-1)} className="btn btn-active mb-6">
         Orqaga
       </button>
       {loading && <h2>LOADING...</h2>}
       {error && <h2>{error}</h2>}
       {sport && (
-        <div className="w-full min-h-96 bg-base-100 shadow-xl my-8 p-4 lg:flex lg:flex-row flex-col">
+        <div className="w-full min-h-96 bg-base-100 shadow-xl my-8  lg:flex lg:flex-row flex-col">
           <figure className="lg:w-1/3 w-full mb-4 lg:mb-0">
             <img
               src={sport.image}

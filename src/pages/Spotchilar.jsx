@@ -1,28 +1,29 @@
 import { Link  } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
+// import { Loader } from "../components";
 
 const Sportchilar = () => {
-  const {data: sport, loading, error } = useFetch(`http://localhost:5000/uzbekSport`);
+  const {data: sport, loading, error } = useFetch(`http://localhost:1000/uzbekSport`);
 
   return (
     <div className="container my-10 px-4">
       <h1 className="text-left  my-10 text-3xl">Sportchilar</h1>
-      {loading && <h2>LOADING...</h2>}
+      {loading && <h2>YUKLANMOQDA...</h2>}
       {error && <h2>{error}</h2>}
-      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="container  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-6 justify-items-center md: flex-col">
         {sport &&
           sport.map((item) => {
             return (
               <>
                 <div
                   key={item.id}
-                  className="card w-96 bg-base-100 shadow-xl px-2"
+                  className="card w-96 bg-base-100 shadow-xl md:grid-cols-1  "
                 >
                   <figure>
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="h-60 w-full object-cover"
+                      className="h-60 w-full object-cover sm: object-cover"
                     />
                   </figure>
                   <div className="card-body">

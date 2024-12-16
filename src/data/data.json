@@ -96,5 +96,97 @@
       "body": "Rishod Sobirov dzyudo bo‘yicha bir nechta xalqaro turnirlarda g‘alaba qozongan O‘zbekistonning faxrli sportchilaridan biri.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxrmXhpHW-ODub35fIE2bnvdOJYl2kUal0w&s"
     }
+  ],
+  "sportTuri": [
+    {
+      "id": 1,
+      "name": "Futbol",
+      "description": "Futbol dunyodagi eng mashhur sport turlaridan biri bo'lib, unda ikki jamoa 11 o'yinchidan iborat bo'ladi va asosiy maqsad to'pni raqib darvozasiga kiritishdir.",
+      "origin": "Angliya",
+      "players": "11 o'yinchi har bir jamoada",
+      "popularity": "Butun dunyo bo'ylab",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfxAjIX3H925_36Ic7pBUMr0lzwfBo1S1Avw&s"
+    },
+    {
+      "id": 2,
+      "name": "Boks",
+      "description": "Boks - ikki jangchi orasidagi musobaqa bo'lib, unda qo'lqop kiyib, belgilangan maydonda kurash olib boriladi.",
+      "origin": "Qadimgi Yunoniston",
+      "players": "2 nafar jangchi",
+      "popularity": "Global, ayniqsa AQSh va Yevropada",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZjvGe1h-g9cQdiUFfoCFE16-gmZjVUEwLQ&s"
+    },
+    {
+      "id": 3,
+      "name": "Basketbol",
+      "description": "Basketbol - 5 kishilik ikki jamoa o'rtasidagi o'yin bo'lib, unda to'pni raqib jamoaning savatiga tushirish maqsad qilingan.",
+      "origin": "AQSh",
+      "players": "5 o'yinchi har bir jamoada",
+      "popularity": "AQSh, Yevropa va Osiyo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wUAHwwipqsx0Nglu1C9m2G9jsR9NQv8pbA&s"
+    },
+    {
+      "id": 4,
+      "name": "Shaxmat",
+      "description": "Shaxmat - ikki kishi o'rtasida aqliy musobaqa bo'lib, 64 katakli doskada o'ynaladi va maqsad raqib shohini mat qilishdir.",
+      "origin": "Hindiston",
+      "players": "2 kishi",
+      "popularity": "Dunyo bo'ylab",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_k42OvSjB95wu2Lyq-mGrvOxpELRDrQWXg&s"
+    },
+    {
+      "id": 5,
+      "name": "Gimnastika",
+      "description": "Gimnastika - sport turi bo'lib, unda jismoniy moslashuvchanlik va akrobatik ko'nikmalar namoyon qilinadi.",
+      "origin": "Qadimgi Yunoniston",
+      "players": "Yakka tartibda yoki guruh bo'lib",
+      "popularity": "Dunyo bo'ylab, ayniqsa Olimpiada o'yinlarida",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTobJsDzHKLW-RU8A5W0VaLC9SxQ4ZN9UjTRQ&s"
+    },
+    {
+      "id": 6,
+      "name": "Tennis",
+      "description": "Tennis - ikki yoki to'rt o'yinchi o'rtasidagi musobaqa bo'lib, raketka yordamida to'pni tarmoq ustidan o'tkazish kerak.",
+      "origin": "Fransiya",
+      "players": "1x1 yoki 2x2",
+      "popularity": "Global",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKm3pGLeJ_utW9faJAZ1Y5USu0bbkKS_BxpA&s"
+    },
+    {
+      "id": 7,
+      "name": "Og'ir atletika",
+      "description": "Og'ir atletika - kuchni sinovdan o'tkazuvchi sport turi bo'lib, unda og'ir yuklarni ko'tarish maqsad qilinadi.",
+      "origin": "Qadimgi Misr",
+      "players": "Yakka tartibda",
+      "popularity": "Olimpiada va xalqaro musobaqalarda",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnn7bizA0k84IKGXGCEnYEDFkejXjk0Wta8g&s"
+    },
+    {
+      "id": 8,
+      "name": "Yengil atletika",
+      "description": "Yengil atletika - yugurish, sakrash va uloqtirish kabi sport turlarini o'z ichiga olgan musobaqa turi.",
+      "origin": "Qadimgi Yunoniston",
+      "players": "Yakka tartibda",
+      "popularity": "Dunyo bo'ylab, ayniqsa Olimpiada o'yinlarida",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHSROrkpSLDXOlMbkKchl2ViWaIe46Id0tnw&s"
+    },
+    {
+      "id": 9,
+      "name": "MMA (Aralash jang san'ati)",
+      "description": "MMA - turli jang san'atlari uslublarini o'z ichiga olgan sport turi bo'lib, kurash va zarbalar qo'llaniladi.",
+      "origin": "Qo'shma Shtatlar",
+      "players": "2 jangchi",
+      "popularity": "Dunyo bo'ylab, UFC orqali mashhur",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPJ9l8aoITusFME_3w_J6OcDhV1DNsIgwkow&s"
+    },
+    {
+      "id": 10,
+      "name": "Dzyudo",
+      "description": "Dzyudo - yapon jang san'ati bo'lib, unda kuchdan emas, texnika va usullardan foydalaniladi.",
+      "origin": "Yaponiya",
+      "players": "2 sportchi",
+      "popularity": "Osiyo va Olimpiada musobaqalarida",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPINQCwUffmaW73dt7__F6Nv2enml565Ux0A&s"
+    }
   ]
 }

@@ -6,13 +6,14 @@ const navlinks = [
     text: "Bosh sahifa",
   },
   {
-    path: "/profil",
-    text: "Sport turlari",
-  },
-  {
     path: "/sportchilar",
     text: "Sportchilar",
   },
+  {
+    path: "/profil",
+    text: "Sport turlari",
+  },
+  
 ];
 
 function NavLinks() {
