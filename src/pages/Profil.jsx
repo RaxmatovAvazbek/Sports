@@ -1,7 +1,7 @@
 import { useFetch } from "../hooks/useFetch";
 
 const Profil = () => {
-  const url = `http://localhost:1000/sportTuri`;
+  const url = `https://676076cc6be7889dc35e0637.mockapi.io/sport/sportTuri`;
   const { data: turlar, loading, error } = useFetch(url);
   console.log(turlar);
   console.log(url);
