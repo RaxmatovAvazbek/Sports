@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 const Cards = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const url = `http://localhost:1000/uzbekSport/${id}`;
+  const url = `https://676076cc6be7889dc35e0637.mockapi.io/sport/uzbekSport/sportTuri/${id}`;
   const { data: sport, loading, error } = useFetch(url);
   console.log(sport);
   
