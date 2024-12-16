@@ -33,7 +33,7 @@ const Sportchilar = () => {
                     <p className="text-gray-500">
                       {item.sport} - {item.title}
                     </p>
-                    <p className="text-sm mt-2">{item.body.slice(0, 35)} ...</p>
+                    <p className="text-sm mt-2">{item.body ? item.body.slice(0, 35) : "No description available"} ...</p>
                     <div className="card-actions justify-start mt-4">
                       <Link to={`/sport/${item.id}`} className="py-1 px-6 bg-blue-600 text-white rounded btn-info">
                           Batafsil
