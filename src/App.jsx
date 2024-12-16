@@ -15,12 +15,10 @@ function App() {
         {
           path: "/sportchilar",
           element: <Sportchilar />,
-          children: [
-            {
-              path: ":id",
-              element: <Cards />,
-            },
-          ],
+        },
+        {
+          path: ":id",
+          element: <Cards />,
         },
         {
           path: "/Profil",

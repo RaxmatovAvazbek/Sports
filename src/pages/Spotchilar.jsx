@@ -27,7 +27,7 @@
 
 import {  NavLink } from "react-router-dom";
 
-const uzbekSportch = [
+const uzbekSport = [
   {
     id: 1,
     name: "Hasanboy Do‘stmatov",
@@ -140,13 +140,13 @@ const uzbekSportch = [
 
 const Sportchilar = () => {
   return (
-    <div className="container my-10">
+    <div className="container my-10 px-4">
       <h1 className="text-left  my-10 text-3xl">Sportchilar</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-        {uzbekSportch.map((item) => {
+      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        {uzbekSport.map((item) => {
           return (
             <>
-              <div key={item.id} className="card w-96 bg-base-100 shadow-xl">
+              <div key={item.id} className="card w-96 bg-base-100 shadow-xl px-2">
                 <figure>
                   <img
                     src={item.image}
