@@ -17,11 +17,11 @@ function App() {
           element: <Sportchilar />,
         },
         {
-          path: ":id",
+          path: "/sport/:id",
           element: <Cards />,
         },
         {
-          path: "/Profil",
+          path: "/profil",
           element: <Profil />,
         },
         {

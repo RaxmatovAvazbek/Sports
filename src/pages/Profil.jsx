@@ -1,35 +1,31 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+import { useFetch } from "../hooks/useFetch";
 
 const Profil = () => {
-  const { id } = useParams();
-  const [sportchi, setSportchi] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/sportchilar/${id}`)
-      .then((response) => setSportchi(response.data))
-      .catch((error) => console.error("Xatolik:", error));
-  }, [id]);
-
-  if (!sportchi) return <div>Yuklanmoqda...</div>;
+  const url = `http://localhost:5000/uzbekSport`;
+  const { data: sport, loading, error } = useFetch(url);
 
   return (
     <div className="container images mx-auto mt-10">
-      <h1 className="text-3xl font-bold mb-4">{sportchi.name}</h1>
-      <img
-        src={sportchi.image}
-        alt={sportchi.name}
-        className="w-full max-w-md mx-auto rounded-md"
-      />
-      <p>
-        <strong>Sport:</strong> {sportchi.sport}
-      </p>
-      <p>
-        <strong>Yutuqlar:</strong> {sportchi.achievements.join(", ")}
-      </p>
-      <p className="mt-4">{sportchi.bio}</p>
+      {loading && <h2>LOADING...</h2>}
+      {error && <h2>{error}</h2>}
+      {sport && (
+        <div className=" w-96 bg-white shadow-xl rounded-lg overflow-hidden flex justify-between">
+          <figure className="w-100%">
+            <img
+              src={sport.image}
+              alt={sport.name}
+              className="w-full h-full object-cover"
+            />
+          </figure>
+          <div className="p-6 w-2/3">
+            <h2 className="text-3xl font-bold text-left mb-2">{sport.name}</h2>
+            <p className="text-xl text-left text-gray-600">
+              {sport.title} - {sport.title}
+            </p>
+            <p className="mt-4 text-gray-700">{sport.body}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
