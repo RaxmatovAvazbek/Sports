@@ -11,7 +11,7 @@ const Sportchilar = () => {
 
   return (
     <div className="container my-10 px-4">
-      <h1 className="text-left  my-10 text-3xl">Sportchilar</h1>
+      <h1 className="text-left  my-10 text-3xl">Sportcnhilar</h1>
       {loading && <h2>YUKLANMOQDA...</h2>}
       {error && <h2>{error}</h2>}
       <div className="container  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-6 justify-items-center md: flex-col">
